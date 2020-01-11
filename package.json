@@ -1,0 +1,19 @@
+{
+  "name": "jstesting",
+  "version": "1.0.0",
+  "description": "testing js",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kdenno/JSTesting.git"
+  },
+  "author": "kdenno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kdenno/JSTesting/issues"
+  },
+  "homepage": "https://github.com/kdenno/JSTesting#readme"
+}
