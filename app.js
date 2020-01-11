@@ -1,4 +1,4 @@
-const { generateText, createElement, validateInput } = require("./util");
+const { checkAndGenerate, createElement } = require("./util");
 
 const initApp = () => {
   // initializes the app, registers the button click listener
@@ -10,18 +10,14 @@ const addUser = () => {
   // appends the element to the DOM
   const newUserNameInput = document.querySelector("input#name");
   const newUserAgentInput = document.querySelector("input#age");
-  if (
-    !validateInput(newUserNameInput.value, true, false) ||
-    !validateInput(newUserAgentInput.value, false, true)
-  ) {
-    return;
+  const outputText = checkAndGenerate(newUserNameInput.value, newUserAgentInput.value);
+  if(!outputText){
+      // dont create the DOM element
+      return;
   }
 
   const userList = document.querySelector(".user-list");
-  const outputText = generateText(
-    newUserNameInput.value,
-    newUserAgentInput.value
-  );
+  
   const element = createElement("li", outputText, "user-item");
   userList.appendChild(element);
 };
