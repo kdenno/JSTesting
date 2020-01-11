@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kdenno/JSTesting/issues"
   },
-  "homepage": "https://github.com/kdenno/JSTesting#readme"
+  "homepage": "https://github.com/kdenno/JSTesting#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
 }
