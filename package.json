@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/kdenno/JSTesting#readme",
   "devDependencies": {
-    "jest": "^24.9.0"
+    "jest": "^24.9.0",
+    "puppeteer": "^2.0.0"
   }
 }
